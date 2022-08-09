@@ -1,6 +1,7 @@
 function check() {
     let vSalary = document.getElementById("salary")
     let vPrice = document.getElementById("price")
+    let calculo = document.getElementById('msg')
     let salary = 0
     let time = 0
 
@@ -10,5 +11,6 @@ function check() {
 } 
 var hours = Math.floor(time / 60);  
 var minutes = time % 60; 
-alert ('you need work ' + hours + ' hours ' + 'and ' + minutes + ' minutes')
+calculo.innerHTML = 'you need work ' + hours + ' hours ' + 'and ' + minutes + ' minutes'
+
 } 
